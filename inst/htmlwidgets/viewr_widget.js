@@ -14,11 +14,12 @@ HTMLWidgets.widget({
 
     const shutter = shutterHolder.append('button')
       .text(shutter_text)
+      .class('btn')
       .style('width', '50%')
       .style('max-width', '300px')
       .style('height', `${shutter_height}px`)
-      .style('font-size', '24px')
-      .style('font-family', 'Optima');
+      .style('font-size', '50px')
+      .style('font-family', 'Lato');
 
     const sendingAnimation = container
       .append('div')
@@ -126,8 +127,8 @@ HTMLWidgets.widget({
 
                 cameraChooser.selectAll('option').data(
                     [
-                      {value: 'user', title: 'front'},
-                      {value:'environment', title: 'rear'}
+                      {value:'environment', title: 'rear'},
+                      {value: 'user', title: 'front'}                      
                     ]
                   )
                   .enter().append('option')
