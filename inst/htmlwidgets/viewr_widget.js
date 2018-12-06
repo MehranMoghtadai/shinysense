@@ -17,12 +17,12 @@ HTMLWidgets.widget({
       .style('width', '50%')
       .style('max-width', '300px')
       .style('height', `${shutter_height}px`)
-      .style('font-size', '50px')
+      .style('font-size', '24px')
       .style('font-family', 'Lato');
 
     const sendingAnimation = container
       .append('div')
-      .text('Sending Photo to Shiny')
+      .text('Sending Photo')
       .style('display', 'none');
 
     const video = container
@@ -67,7 +67,7 @@ HTMLWidgets.widget({
             ctx.drawImage(video, 0, 0, outputWidth, outputHeight);
 
             // send the current canvas state to shiny as a base64 encoded string
-            shutter.text('Sending photo to server...');
+            shutter.text('Sending photo...');
 
             Shiny.onInputChange(
               el.id + "_photo",
@@ -122,7 +122,7 @@ HTMLWidgets.widget({
                   .append('select')
                   .style('height', `${shutter_height}px`)
                   .style('font-size', '24px')
-                  .style('font-family', 'Optima');
+                  .style('font-family', 'Lato');
 
                 cameraChooser.selectAll('option').data(
                     [
