@@ -24,7 +24,7 @@ viewr_widget <- function(outputWidth = NULL, outputHeight = NULL, width = NULL, 
     x,
     width = width,
     height = height,
-    package = 'shinysense',
+    package = 'shinysense2',
     elementId = elementId
   )
 }
@@ -47,7 +47,7 @@ viewr_widget <- function(outputWidth = NULL, outputHeight = NULL, width = NULL, 
 #'
 #' @export
 viewr_widgetOutput <- function(outputId, width = '100%', height = '400px'){
-  htmlwidgets::shinyWidgetOutput(outputId, 'viewr_widget', width, height, package = 'shinysense')
+  htmlwidgets::shinyWidgetOutput(outputId, 'viewr_widget', width, height, package = 'shinysense2')
 }
 
 #' @rdname viewr_widget-shiny
