@@ -7,8 +7,8 @@ HTMLWidgets.widget({
   factory: function(el, width, height) {
 
     const container = d3.select(el).html('');
-    const shutter_height = 1;
-    const shutter_text = 'Take Photo!';
+    const shutter_height = 4;
+    const shutter_text = ' ';
 
     const shutterHolder = container.append('center');
 
@@ -16,7 +16,7 @@ HTMLWidgets.widget({
       .text(shutter_text)
       .id('photobutt')
       .style('width', '50%')
-      .style('max-width', '400px')
+      .style('max-width', '4px')
       .style('height', `${shutter_height}px`)
       .style('font-size', '18px')
       .style('font-family', 'Lato');
