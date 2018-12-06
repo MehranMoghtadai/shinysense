@@ -14,6 +14,7 @@ HTMLWidgets.widget({
 
     const shutter = shutterHolder.append('button')
       .text(shutter_text)
+      .id('photobutt')
       .style('width', '50%')
       .style('max-width', '400px')
       .style('height', `${shutter_height}px`)
